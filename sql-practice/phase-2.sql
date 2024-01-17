@@ -1,4 +1,6 @@
 -- Your code here
+.mode box
+
 DROP TABLE IF EXISTS customers;
 DROP TABLE IF EXISTS coffee_orders;
 
@@ -11,10 +13,6 @@ CREATE TABLE customers (
     points INTEGER NOT NULL,
     created_at TIMESTAMP
 );
-
-INSERT INTO customers (points)
-VALUES
-    (5);
 
 CREATE TABLE coffee_orders (
     id INTEGER PRIMARY KEY,
